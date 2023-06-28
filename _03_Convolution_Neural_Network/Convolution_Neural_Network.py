@@ -36,6 +36,7 @@ class ResidualBlock(nn.Module):
         self.bn2 = nn.BatchNorm2d(out_channels)
         self.downsample = downsample
         
+        
     def forward(self, x):
         residual = x
         out = self.conv1(x)
